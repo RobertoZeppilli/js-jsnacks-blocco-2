@@ -35,12 +35,20 @@ var squadre = [
 // 3. inizializzo l'array vuoto
 var nomeSquadraFalliSubiti = [];
 
+
 // 4. Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli subiti.
 // 4.1 Infine inseriamo nell'array vuoto creato in precedenza, solamente nomi e falli subiti. Stampiamo tutto in console.
 for (var i = 0; i < squadre.length; i++) {
+    var obj = {};
+
     squadre[i]["punti"] = numeroRandom(1, 100);
     squadre[i]["falli subiti"] = numeroRandom(1, 100);
-    nomeSquadraFalliSubiti.push(squadre[i]["nome"] + ": " + squadre[i]["falli subiti"] + " falli subiti");
+    
+    obj[0] = squadre[i]["nome"];
+    obj[1] = squadre[i]["falli subiti"]
+    // nomeSquadraFalliSubiti.push(squadre[i]["nome"] + ": " + squadre[i]["falli subiti"] + " falli subiti");
+    nomeSquadraFalliSubiti.push(obj);
 }
-console.log(squadre);
 console.log(nomeSquadraFalliSubiti);
+// console.log(squadre);
+// console.log(nomeSquadraFalliSubiti);

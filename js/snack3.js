@@ -11,9 +11,6 @@ function intervalArray(arr, a, b) {
     } else {
         arraySlice = arr.slice(a, b + 1);
     }
-    // for (var i = 0; i < arr.length; i++) {
-    //     var newArray = arr.slice(a, b + 1);
-    // };
     return arraySlice;
 };
 
